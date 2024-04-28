@@ -41,10 +41,6 @@ git push origin feature/YourFeature
 
 5. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 CodeCraft was inspired by the need for a user-friendly coding environment and draws inspiration from block-based programming interfaces like Scratch.

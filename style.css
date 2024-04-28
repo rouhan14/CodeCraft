@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e3f2ff;
+}
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    background-color: #e3f2ff;
+}
+
+.dragables {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: auto;
+}
+
+#variable {
+    background-color: #F5B7B1;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#while_loop {
+    background-color: #AED6F1;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#for_loop {
+    background-color: #BA90C6;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#if_else {
+    background-color: #A3E4D7;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#if_statement {
+    background-color: #FADBD8;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#arithemetic {
+    background-color: #F9E79F;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#foo {
+    background-color: #ff76f4;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#foo_call {
+    background-color: #db845f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#print {
+    background-color: #76ffa4;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#read_file{
+    background-color: #bbff4e;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#write_file{
+    background-color: #aaaaaa;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.main_area {
+    width: 50%;
+    height: 100vh;
+    border-right: 1px solid black;
+    overflow: auto;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.code {
+    width: 25%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Divide the code and output area into two equal halfs and make both the divs scrollable */
+.php_code{
+    box-sizing: border-box;
+    width: 50vh;
+    height: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+.php_output{
+    box-sizing: border-box;
+    width: 50vh;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.dragable {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.variable {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F5B7B1;
+    border-left: 3px solid white;
+}
+
+.for_loop {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #BA90C6;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.while_loop {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #AED6F1;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.if_else {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #A3E4D7;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.arithemetic {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #F9E79F;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.if_statement {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #FADBD8;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.print {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #76ffa4;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.foo {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #ff76f4;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+    padding-bottom: 3rem;
+}
+
+.foo_call {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #db845f;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.read_file{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #bbff4e;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.write_file{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #aaaaaa;
+    margin-bottom: 1rem;
+    border-left: 3px solid white;
+}
+
+.dropable {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+/* Style the select element */
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #f9f9f9);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+
+/* Style the options */
+.select option {
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Style the options on hover */
+.select option:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style the options when selected */
+.select option:checked {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+
+/* Create css for the input tags all over the website with white background color and border radius property along with some other features */
+input {
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deleteButton {
+    /* position the button to the top right corner of the div */
+    position: relative;
+    top: 0;
+    right: 0;
+    /* style the button */
+    background-color: rgb(255, 78, 78);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Scrollbar code */
+/* width and height */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.generateCode{
+    background-color: #0057fa;
+    width: 10rem;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.generateCode:hover{
+    background-color: #538aff;
+}

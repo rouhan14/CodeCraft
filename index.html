@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeCraft</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dragables">
+            <div id="for_loop" class="dragable" draggable="true" ondragstart="drag(event)">For Loop</div>
+            <div id="while_loop" class="dragable" draggable="true" ondragstart="drag(event)">While Loop</div>
+            <div id="if_else" class="dragable" draggable="true" ondragstart="drag(event)">If Else</div>
+            <div id="arithemetic" class="dragable" draggable="true" ondragstart="drag(event)">Arithmetic</div>
+            <div id="print" class="dragable" draggable="true" ondragstart="drag(event)">Print</div>
+            <div id="foo" class="dragable" draggable="true" ondragstart="drag(event)">Function</div>
+            <div id="if_statement" class="dragable" draggable="true" ondragstart="drag(event)">If</div>
+            <div id="variable" class="dragable" draggable="true" ondragstart="drag(event)">Variable</div>
+            <div id="foo_call" class="dragable" draggable="true" ondragstart="drag(event)">Function Call</div>
+            <div id="read_file" class="dragable" draggable="true" ondragstart="drag(event)">Read File</div>
+            <div id="write_file" class="dragable" draggable="true" ondragstart="drag(event)">Write File</div>
+        </div>
+        <div id="main_area" class="main_area childBearingDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="code">
+            <div id="code" class="php_code">
+                <h4>Code:</h4>
+            </div>
+            <div class="php_output">
+                <h4>Outptut:</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
